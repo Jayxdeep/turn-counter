@@ -19,3 +19,4 @@ This project is a turn counter using an Arduino Uno, a 16x2 I2C LCD, and a PIR m
 - ## Code
 The code for this project is written in  C++ 
 This was a mini-project.
+- Live demo [here](https://wokwi.com/projects/404859771273307137)
