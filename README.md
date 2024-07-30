@@ -1,9 +1,11 @@
-# turn-counter
-##Description 
-This project is based on a turn counter which i have done using arduino uno,16X2 lcd and pir motion detection sensor.
-##Components used
--Arduino uno
--16x2 I2C LCD
+# Turn Counter Project
+
+## Description
+This project is a turn counter using an Arduino Uno, a 16x2 I2C LCD, and a PIR motion sensor. The project detects motion and increments a turn count displayed on the LCD.
+
+## Components
+- Arduino Uno
+- 16x2 I2C LCD
 - PIR Motion Sensor
 - Connecting Wires
 ## Wiring Diagram
