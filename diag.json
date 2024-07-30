@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "author": "Jaydeep Mukherjee",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-pir-motion-sensor", "id": "ir", "top": 13.6, "left": 79.02, "attrs": {} },
+      {
+        "type": "wokwi-lcd1602",
+        "id": "lcd2",
+        "top": -130.97,
+        "left": 54.4,
+        "attrs": { "pins": "i2c" }
+        
+      },
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": 163.8, "left": 18.6, "attrs": {} },
+      {
+        "type": "wokwi-led",
+        "id": "led1",
+        "top": -133.29829739722146,
+        "left": -299.5728265407614,
+        "attrs": { "color": "red" }
+      }
+    ],
+    "connections": [
+      [ "ir:VCC", "uno:5V", "red", [ "v268.8", "h67.2" ] ],
+      [ "ir:GND", "uno:GND.1", "black", [ "v0" ] ],
+      [ "ir:OUT", "uno:2", "green", [ "v48", "h124.66" ] ],
+      [ "uno:5V", "lcd2:VDD", "red", [ "v-268.9", "h-92.2" ] ],
+      [ "uno:GND.2", "lcd2:VSS", "black", [ "v-307.3", "h-120.9" ] ],
+      [ "uno:5V", "lcd2:VCC", "red", [ "v-422.5", "h-130.6", "v-19.2" ] ],
+      [ "lcd2:GND", "uno:GND.3", "black", [ "h-68", "v502.17", "h211.2" ] ],
+      [ "uno:A4", "lcd2:SDA", "green", [ "v-134.5", "h-322.2", "v-163.2" ] ],
+      [ "uno:A5", "lcd2:SCL", "green", [ "v-326.5", "h-254.9", "v-96" ] ]
+    ],
+    "dependencies": {}
+  }
