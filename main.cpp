@@ -32,10 +32,10 @@ void loop() {
     lcd.print(x);
     lcd.print("   "); // Clear any previous digits
     state = 1;
-    delay(200); // Debounce delay
+    delay(10); // Debounce delay,reducing more can lead to less realiable
   } else if (counterValue == LOW && state == 1) {
     state = 0;
-    delay(200); // Debounce delay
+    delay(10); // Debounce delay
   }
 
   delay(50); // Small delay to stabilize readings
